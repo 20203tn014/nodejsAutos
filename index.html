@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <hr>
+    <h1 class="align text-center">
+        Agencia Automotriz      <i class="fas fa-car"></i>
+    </h1>
+    <hr>
+    <div class="container">
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">Marca</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+            <div class="col-md-4">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="col-md-4">
+              <label for="inputPassword4" class="form-label">Matricula</label>
+              <input type="number" class="form-control" id="matricula">
+            </div>
+            <div class="col-md-2">
+              <label for="inputEmail4" class="form-label">Año de verificación</label>
+              <input type="number" class="form-control" id="ano_verific">
+            </div>
+            <div class="col-md-4">
+              <label for="inputPassword4" class="form-label">Fecha de registro</label>
+              <input type="datetime-local" class="form-control" id="fecha_registro">
+            </div>
+            <div class="col-md-4">
+              <label for="inputCity" class="form-label">Fecha de actualización</label>
+              <input type="datetime-local" class="form-control" id="fecha_actualizacion">
+            </div>
+            <div class="col-md-1">
+                <label for="inputCity" class="form-label">Estado</label>
+                <input type="number" class="form-control" id="estado">
+            </div>
+            <div class="col-md-1">
+                <label for="inputCity" class="form-label">id_marca</label>
+                <input type="number" class="form-control" id="id_marca">
+              </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </form>
+    </div>
+    <hr>
+    <div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Matricula</th>
+            <th scope="col">Año verificación</th>
+            <th scope="col">Fecha regitro</th>
+            <th scope="col">Fecha actualización</th>
+            <th scope="col">Estado</th>
+            <th scope="col">id_marca</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="btn btn-warning" href="http://localhost:4000/autos/update/id_auto">Modificar</button></td>
+            <td><button type="button" class="btn btn-danger" href="http://localhost:4000/autos/delete/id_auto">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+    <script src="./src/routes/autos.js"></script>
+    <script src="./src/routes/marca.js"></script>
+    <script src="./src/routes/index.js"></script>
+</html>
